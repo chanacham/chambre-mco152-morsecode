@@ -1,4 +1,4 @@
-package Chambre.MorseCode;
+package morsecode.chambre;
 
 public class MorseCode {
     private static final String[] letters = {"a", "b", "c", "d", "e", "f",
@@ -36,11 +36,11 @@ public class MorseCode {
         for (String s : message) {
             for (int i = 0; i < morse.length; i++) {
                 if (s.equalsIgnoreCase(morse[i])) {
-                    result.append(letters[i]);
+                    result.append(letters[i]).append(" ");
                 }
             }
         }
-        return String.valueOf(result);
+        return result.toString();
     }
 
 }

@@ -1,4 +1,4 @@
-package Chambre.MorseCode;
+package morsecode.chambre;
 
 import org.junit.jupiter.api.Test;
 
@@ -11,6 +11,9 @@ class MorseCodeTest {
         assertEquals("**** * *-** *-** ---", interpreter.toMorseCode("hello"));
         assertEquals("-*-* **** *- -* *-" , interpreter.toMorseCode("chana"));
         assertEquals("*--* *-* --- --* *-* *- --", interpreter.toMorseCode("program"));
+        assertEquals("-*-* **** *- -* *- *--* *-* --- --* *-* *- --", interpreter.toMorseCode("chana program"));
+        assertEquals("**** * *-** *-** --- -*-* **** *- -* *- *--* *-* --- --* *-* *- --", interpreter.toMorseCode("hello chana program"));
+
     }
 
     @Test
