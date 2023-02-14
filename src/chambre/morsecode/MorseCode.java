@@ -1,4 +1,4 @@
-package morsecode.chambre;
+package chambre.morsecode;
 
 public class MorseCode {
     private static final String[] letters = {"a", "b", "c", "d", "e", "f",
@@ -26,7 +26,7 @@ public class MorseCode {
         }
 
         result.deleteCharAt(result.length() - 1);
-        return String.valueOf(result);
+        return result.toString();
     }
 
     public String toMessage(String morseCode) {

@@ -1,4 +1,4 @@
-package morsecode.chambre;
+package chambre.morsecode;
 
 import org.junit.jupiter.api.Test;
 
